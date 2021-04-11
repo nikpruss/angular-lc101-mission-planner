@@ -6,8 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-  missionName = "Mars 2030";
-  rocketName = "Plasma Max";
+  missionName: string = "Mars 2030";
+  rocketName: string = "Plasma Max";
   constructor() { }
 
   ngOnInit() {
