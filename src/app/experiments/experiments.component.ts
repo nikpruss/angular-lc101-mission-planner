@@ -7,9 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExperimentsComponent implements OnInit {
 
+  experiments: string[] = ["Mars soil sample", "Plant growth in habitat", "Human bone density"];
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  addEx(exNewName){
+    this.experiments.push(exNewName);
+  }
+
+  remove(member: string) {
+    let index = this.experiments.indexOf(member);
+    this.experiments.splice(index, 1);
   }
 
 }

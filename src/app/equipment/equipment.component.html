@@ -1,7 +1,9 @@
 <h3>Equipment</h3>
-<ul>
-  <li>Habitat dome</li>
-  <li>Drones</li>
-  <li>Food containers</li>
-  <li>Oxygen tanks</li>
+<ul>  
+  <li *ngFor = "let equipment of equipments">
+    {{equipment}}
+    <button (click) = "remove(equipment)">remove</button>
+  </li>
 </ul>
+<input #eqName type="text"/>
+<button (click) = "addEq(eqName.value)">Add</button>
