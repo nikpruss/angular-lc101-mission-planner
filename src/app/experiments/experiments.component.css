@@ -5,4 +5,9 @@
 
 h3 {
     text-align: center;
+    color: purple;
+}
+
+li:hover {
+    cursor: pointer;
 }
